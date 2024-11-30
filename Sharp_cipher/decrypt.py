@@ -1,8 +1,7 @@
 import constants
 import re
 
-with open('./Sharp_cipher/input.txt', 'r') as myFile:
-    message = myFile.read()
+message = input('Enter a message to decrypt:\n--> ')
 
 #remove spaces
 message = message.replace(' ', '')
@@ -25,5 +24,5 @@ output = ''
 for bit in bits:
     output += constants.decrypted[constants.encrypted.index(bit)]
 
-with open('./Sharp_cipher/output.txt', 'w') as myFile:
-    myFile.write(output)
+print('Here is the decrypted message:')
+print(output)
