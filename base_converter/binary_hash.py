@@ -1,7 +1,7 @@
 from base_after_base import hexadecimal, binary, base_to_base
 from hashlib import md5
 
-message = md5("Hello world!".encode()).hexdigest().upper()
+message = md5("Braden Jay Mullarky".encode()).hexdigest().upper()
 
 print(message)
 
